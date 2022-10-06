@@ -1,0 +1,32 @@
+[
+    {
+        "id": 5,
+        "name": "Mickey Mouse",
+        "lastmessage": "How are you",
+        "messages": []
+    },
+    {
+        "id": 6,
+        "name": "Mario",
+        "lastmessage": "Hey there",
+        "messages": []
+    },
+    {
+        "id": 7,
+        "name": "SpongeBob",
+        "lastmessage": "Hello",
+        "messages": []
+    },
+    {
+        "id": 8,
+        "name": "Scooby-Doo",
+        "lastmessage": "what are you doing..",
+        "messages": []
+    },
+    {
+        "id": 9,
+        "name": "Pooh",
+        "lastmessage": "Hiiiiii",
+        "messages": []
+    }
+]
