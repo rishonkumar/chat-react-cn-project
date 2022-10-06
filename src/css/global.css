@@ -1,0 +1,236 @@
+.chat {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+}
+.chat .chat-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+}
+.chat-header-info {
+  flex: 1;
+  margin-left: 10px;
+}
+.chat-header-info h3 {
+  font-size: 16px;
+}
+.chat-header-info p {
+  font-size: 12px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right svg {
+  font-size: 18px;
+}
+/* chat Body */
+.chat-body {
+  background-color: lightblue;
+  /* background-image: url(https://i.pinimg.com/originals/0f/05/27/0f05274b1bdc8feed70822513cd7a903.jpg); */
+  padding: 25px 10px;
+  overflow-y: auto;
+  flex: 1;
+}
+.chat-body .chat-message {
+  position: relative;
+  background-color: white;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.chat-name {
+  position: absolute;
+  top: -18px;
+  left: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.chat-time {
+  font-size: 10px;
+  margin-left: 10px;
+}
+.chat-reciever {
+  background-color: #d6f8c6 !important;
+  margin-left: auto;
+  border-radius: 2%;
+}
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.chat-footer svg {
+  padding: 10px;
+  color: grey;
+}
+.chat-footer form {
+  flex: 1;
+}
+.chat-footer form input[type="text"] {
+  border: 0;
+  height: 40px;
+  outline: 0;
+  width: 100%;
+  border-radius: 20px;
+  text-indent: 30px;
+}
+.chat-footer form input::placeholder {
+  padding-left: 2px;
+}
+
+.chat-footer form input[type="submit"] {
+  display: none;
+}
+
+.hide {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: white;
+  width: 40vw;
+  height: 60vh;
+  border: 1px solid black;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  padding: 20px;
+  z-index: 100;
+}
+.hide-list {
+  margin-top: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-left: 3px solid black;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+}
+.hide-list h2 {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.hide-list p {
+  margin-left: 10px;
+  font-size: 12px;
+}
+.hide-list:hover {
+  background-color: rgb(172, 169, 169);
+  color: white;
+  font-size: bold;
+}
+.add-button {
+  display: flex;
+  align-items: center;
+  color: rgb(129, 126, 126);
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px;
+  padding-left: 12px;
+  padding-right: 20px;
+  font-size: 13px;
+  height: 20px;
+}
+.add-button:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+
+.sidebar-container {
+  flex: 0.35;
+  background-color: white;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid lightgrey;
+  padding: 10px;
+  background-color: lightgray;
+}
+.sidebar-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+.sidebar-header-right svg {
+  font-size: 20px;
+}
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  height: 40px;
+  padding: 10px;
+}
+.sidebar-search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 35px;
+  width: 100%;
+  border-radius: 20px;
+}
+.sidebar-search-container input {
+  border: 0;
+  margin-left: 10px;
+  outline: 0;
+  width: 100%;
+}
+/* sidebar Chat */
+.sidebar-chats {
+  display: flex;
+  flex-direction: column;
+  background-color: lightyellow;
+}
+.sidebar-chat {
+  display: flex;
+  background-color: lightyellow;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px;
+}
+.sidebar-chat:hover {
+  cursor: pointer;
+  background-color: lightpink;
+}
+.sidebar-chat-info {
+  margin-left: 15px;
+}
+.sidebar-chat-info h2 {
+  font-size: 16px;
+}
+.sidebar-chat-info p {
+  font-size: 12px;
+}
+.sidebar-chat > h2 {
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.sidebar-chat .MuiAvatar-circular {
+  width: 30px;
+  height: 30px;
+}
+/* side bar add chat with add button */
+.sidebar-addchat {
+  display: flex;
+  align-items: center;
+  color: lightyellow;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px;
+  padding-left: 12px;
+  padding-right: 20px;
+  font-size: 13px;
+  height: 20px;
+}
+.sidebar-addchat:hover {
+  cursor: pointer;
+  background-color: lightpink;
+}
